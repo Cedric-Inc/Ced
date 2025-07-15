@@ -1,16 +1,29 @@
-# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        left = 0
+        right = len(s)-1
+
+        while left<=right:
+            if not s[left].isalnum():
+                left+=1
+                continue
+            if not s[right].isalnum():
+                right-=1
+                continue
+
+            if s[left] == s[right]:
+                left+=1
+                right-=1
+            else:
+                return False
+        return True
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+s = Solution()
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(s.isPalindrome("A man, a plan, a canal: Panama"))
