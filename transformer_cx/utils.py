@@ -27,7 +27,7 @@ class ModelArg:
     n_head: int = 16
     head_dim: int = 16
 
-    vocab_size = 1000
+    vocab_size = 50257
 
 
 args = ModelArg()

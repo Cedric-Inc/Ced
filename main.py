@@ -1,29 +1,32 @@
-
 class Solution(object):
-    def isPalindrome(self, s):
+    def evalRPN(self, tokens):
         """
-        :type s: str
-        :rtype: bool
+        :type tokens: List[str]
+        :rtype: int
         """
-        left = 0
-        right = len(s)-1
 
-        while left<=right:
-            if not s[left].isalnum():
-                left+=1
-                continue
-            if not s[right].isalnum():
-                right-=1
-                continue
-
-            if s[left] == s[right]:
-                left+=1
-                right-=1
+        def do_cal(x, y, cal):
+            if cal == '+':
+                return x + y
+            elif cal == '-':
+                return x - y
+            elif cal == '*':
+                return x * y
             else:
-                return False
-        return True
+                return int(x / y)
+
+        cal = {'+', '-', '*', '/'}
+        stack = []
+        for i in tokens:
+            if i not in cal:
+                stack.append(int(i))
+            else:
+                x = stack.pop()
+                y = stack.pop()
+                stack.append(do_cal(int(y), int(x), i))
+        return stack.pop()
 
 
 s = Solution()
-
-print(s.isPalindrome("A man, a plan, a canal: Panama"))
+a = s.evalRPN(["10","6","9","3","+","-11","*","/","*","17","+","5","+"])
+print(a)

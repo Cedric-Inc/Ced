@@ -5,23 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0f1702-393b-4b92-b001-05628dc7b9da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/llama2_cx/attempt1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/Decoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/Encoder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/LayerNorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/MLP.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/multiead.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/positional.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/transformer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/transformer_cx/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tuning/LoRA_0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tuning/QLoRA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classifier/gpt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gpt2_cx/test_gen.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llama2_cx/llama_attention.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llama2_cx/rmsnorm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/llama2_cx/template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Endcoder.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sample_transformer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gpt2_cx/gpt2_trained.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/llama2_cx/attempt1.py" beforeDir="false" afterPath="$PROJECT_DIR$/llama2_cx/attempt1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multi_head_attn.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/norm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_attention.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transformer_cx/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformer_cx/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,25 +43,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.1.executor": "Debug",
-    "Python.11.executor": "Run",
-    "Python.LayerNorm.executor": "Run",
-    "Python.attempt1.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.multi_head_attn.executor": "Debug",
-    "Python.multiead.executor": "Debug",
-    "Python.positional.executor": "Run",
-    "Python.transformer.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "test/0612",
-    "last_opened_file_path": "G:/Coding/SAD-LLM",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.1.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LayerNorm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.advanced_clas.executor&quot;: &quot;Run&quot;,
+    &quot;Python.attempt1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.classifier.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cleansing.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.gpt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gpt2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.llama_attention.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mlp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.multi_head_attn.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.multiead.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.positional.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rmsnorm.executor&quot;: &quot;Run&quot;,
+    &quot;Python.template.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.test_gen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.transformer.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test/0612&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/Coding/SAD-LLM&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.gpt2">
-    <configuration name="gpt2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Coding\SAD-LLM\classifier" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="advanced_clas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SAD-LLM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,11 +86,55 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gpt2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="G:\Coding\SAD-LLM\gpt2\gpt2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier/advanced_clas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cleansing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SAD-LLM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier/cleansing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="gpt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SAD-LLM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifier" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier/gpt.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -109,7 +165,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multi_head_attn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="mlp" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SAD-LLM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -118,11 +174,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/multi_head_attn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier/mlp.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +187,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiead" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="SAD-LLM" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,55 +196,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformer_cx" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/classifier" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transformer_cx/multiead.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="positional" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SAD-LLM" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformer_cx" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transformer_cx/positional.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="transformer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="SAD-LLM" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/transformer_cx" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/transformer_cx/transformer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/classifier/predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -199,11 +211,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.gpt2" />
-        <item itemvalue="Python.transformer" />
-        <item itemvalue="Python.positional" />
-        <item itemvalue="Python.multiead" />
-        <item itemvalue="Python.multi_head_attn" />
+        <item itemvalue="Python.mlp" />
+        <item itemvalue="Python.cleansing" />
+        <item itemvalue="Python.gpt" />
+        <item itemvalue="Python.predict" />
+        <item itemvalue="Python.advanced_clas" />
       </list>
     </recent_temporary>
   </component>
@@ -229,16 +241,53 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/llama2_cx/template.py</url>
+          <line>88</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/gpt2_cx/gpt2.py</url>
-          <line>54</line>
-          <option name="timeStamp" value="21" />
+          <url>file://$PROJECT_DIR$/llama2_cx/attempt1.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classifier/classifier.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classifier/mlp.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classifier/cleansing.py</url>
+          <line>148</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/classifier/mlp.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/transformer_cx/LayerNorm.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="57" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>
