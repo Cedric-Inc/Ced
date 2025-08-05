@@ -83,7 +83,7 @@ from torch.optim import AdamW
 from tqdm import tqdm
 
 accelerator = Accelerator()
-
+accelerator.print(f"Using {accelerator.num_processes} processes on device {accelerator.device}")
 train_dataloader = DataLoader(
     tokenized_dataset,
     shuffle=True,
@@ -103,7 +103,7 @@ lr_scheduler = get_scheduler(
 model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
     model, optimizer, train_dataloader, lr_scheduler
 )
-
+print('[DEBUG] Start Training!')
 model.train()
 for epoch in range(training_args.num_train_epochs):
     progress_bar = tqdm(train_dataloader, desc=f"Epoch {epoch+1}")
