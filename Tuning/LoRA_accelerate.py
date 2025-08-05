@@ -1,4 +1,4 @@
-# !pip install datasets evaluate accelerate rouge_score transformers peft
+# !pip install datasets evaluate accelerate rouge_score transformers peft deepspeed
 from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, Trainer, DataCollatorForSeq2Seq
 from peft import LoraConfig, get_peft_model, TaskType
 from datasets import load_dataset
@@ -103,7 +103,12 @@ lr_scheduler = get_scheduler(
 model, optimizer, train_dataloader, lr_scheduler = accelerator.prepare(
     model, optimizer, train_dataloader, lr_scheduler
 )
-print('[DEBUG] Start Training!')
+accelerator.print('[DEBUG] Start Training!')
+if accelerator.is_main_process:
+    accelerator.print("This is the main process.")
+else:
+    print("This is NOT the main process.")
+
 model.train()
 for epoch in range(training_args.num_train_epochs):
     progress_bar = tqdm(train_dataloader, desc=f"Epoch {epoch+1}")

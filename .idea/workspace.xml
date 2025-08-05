@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0f1702-393b-4b92-b001-05628dc7b9da" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
