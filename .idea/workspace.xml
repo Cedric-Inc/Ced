@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa0f1702-393b-4b92-b001-05628dc7b9da" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Tuning/LoRA_0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tuning/QLoRA.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/classifier/gpt.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gpt2_cx/test_gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llama2_cx/llama_attention.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llama2_cx/rmsnorm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/llama2_cx/template.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gpt2_cx/gpt2_trained.pth" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llama2_cx/attempt1.py" beforeDir="false" afterPath="$PROJECT_DIR$/llama2_cx/attempt1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/transformer_cx/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/transformer_cx/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tuning/LoRA_accelerate.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

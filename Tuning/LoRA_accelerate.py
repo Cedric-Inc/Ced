@@ -29,7 +29,7 @@ lora_cfg = LoraConfig(
 model = get_peft_model(model=model, peft_config=lora_cfg)
 model.print_trainable_parameters()
 
-dataset = load_dataset("tatsu-lab/alpaca", split="train[:2000]")
+dataset = load_dataset("tatsu-lab/alpaca", split="train[:4000]")
 
 def tokenize(example):
     prompt = example["instruction"]
@@ -63,7 +63,7 @@ data_collator = DataCollatorForSeq2Seq(tokenizer, model=model, padding=True)
 
 training_args = TrainingArguments(
     output_dir="./qwen3-4b-lora-output",
-    per_device_train_batch_size=2,
+    per_device_train_batch_size=4,
     gradient_accumulation_steps=2,
     num_train_epochs=1,
     learning_rate=2e-4,
