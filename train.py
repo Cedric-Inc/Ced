@@ -49,19 +49,19 @@ training_args = TrainingArguments(
     output_dir="./outputs",
     overwrite_output_dir=True,
     num_train_epochs=2,
-    per_device_train_batch_size=64,
+    per_device_train_batch_size=128,
     gradient_accumulation_steps=2,
     learning_rate=2e-4,
     warmup_steps=500,
     weight_decay=0.01,
     logging_dir="./logs",
     logging_steps=100,
-    save_strategy="steps",
+    save_strategy="epoch",
     report_to="none",
     bf16=False,
     deepspeed="ds_config.json",
     # evaluate_during_training=True,
-    eval_strategy="steps",
+    eval_strategy="epoch",
     load_best_model_at_end=True,
     # metric_for_best_model="eval_loss",
     greater_is_better=False
@@ -92,4 +92,5 @@ from huggingface_hub import login
 
 # model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
 # tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+
 
