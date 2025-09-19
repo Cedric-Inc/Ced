@@ -55,7 +55,7 @@ training_args = TrainingArguments(
     warmup_steps=500,
     weight_decay=0.01,
     logging_dir="./logs",
-    logging_steps=400,
+    logging_steps=100,
     save_strategy="steps",
     report_to="none",
     bf16=False,
@@ -88,8 +88,8 @@ tokenizer.save_pretrained("./outputs_d/Ced_33M")
 
 from huggingface_hub import login
 
-login("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")
+# login("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")
 
-model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
-tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+# model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+# tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
 
