@@ -1,0 +1,6 @@
+transformers[deepspeed]
+datasets
+evaluate
+accelerate
+tensorboard
+huggingface-hub
