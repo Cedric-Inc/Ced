@@ -20,7 +20,10 @@ tokenizer.pad_token = tokenizer.eos_token
 
 dataset = load_dataset("dhruveshpatel/tiny_roc_stories")
 # , split=["train[:10000]", "validation[:1000]"]
-
+    # split={
+    #     "train": "train[:10000]",
+    #     "validation": "validation[:1000]"
+    # }
 
 def tokenize_fn(example):
     return tokenizer(
@@ -92,6 +95,7 @@ login("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")
 
 model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
 tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+
 
 
 
