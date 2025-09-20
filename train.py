@@ -49,8 +49,8 @@ training_args = TrainingArguments(
     output_dir="./outputs",
     overwrite_output_dir=True,
     num_train_epochs=2,
-    per_device_train_batch_size=128,
-    gradient_accumulation_steps=2,
+    per_device_train_batch_size=32,
+    gradient_accumulation_steps=4,
     learning_rate=2e-4,
     warmup_steps=500,
     weight_decay=0.01,
@@ -88,9 +88,10 @@ tokenizer.save_pretrained("./outputs_d/Ced_33M")
 
 from huggingface_hub import login
 
-# login("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")
+login("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")
 
-# model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
-# tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+model.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+tokenizer.push_to_hub("UserCedric/Ced-33M", overwrite=True)
+
 
 
