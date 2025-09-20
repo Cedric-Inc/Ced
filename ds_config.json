@@ -1,7 +1,7 @@
 {
-  "train_batch_size": 1536,
-  "train_micro_batch_size_per_gpu": 128,
-  "gradient_accumulation_steps": 2,
+  "train_batch_size": 1024,
+  "train_micro_batch_size_per_gpu": 32,
+  "gradient_accumulation_steps": 4,
 
   "bf16": {
     "enabled": false
@@ -23,6 +23,7 @@
   "steps_per_print": 100,
   "wall_clock_breakdown": false
 }
+
 
 
 
